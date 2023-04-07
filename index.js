@@ -101,8 +101,9 @@ export default function example() {
 
     // RESIZE HANDLER
     function onWindowResize() {
-        camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
+        (camera.aspect =
+            canvasContainer.offsetWidth / canvasContainer.offsetHeight),
+            camera.updateProjectionMatrix();
         renderer.setSize(
             canvasContainer.offsetWidth,
             canvasContainer.offsetHeight
