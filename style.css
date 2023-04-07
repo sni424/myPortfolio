@@ -1,7 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap");
 body {
     margin: 0;
     padding: 0;
     position: relative;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    color: white;
 }
 .flex {
     display: flex;
@@ -10,12 +19,17 @@ body {
 .normal {
     width: 50%;
     height: 100%;
-    background-color: black;
+    background-image: url("/image/black-star.jpg");
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.9);
     font-family: "Exo 2", sans-serif;
+}
+.text {
+    text-align: center;
 }
 .three {
     width: 50%;
